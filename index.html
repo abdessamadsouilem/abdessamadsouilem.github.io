@@ -1,0 +1,472 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Abdessamad Souilem</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="abdessamadsouilem, abdessamad souilem, Software Developer" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Abdessamad Souilem | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Abdessamad Souilem | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="Abdessamad Souilem | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+    <style>{
+      }
+      .contact_form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact_form a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 1rem;
+      }
+      .form{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        width:50%;      }
+      .form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form-group input {
+  border-radius: 0.5rem;
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffff;
+  color: #333333;
+  border-color: #333333;
+}
+.form-group input:focus {
+  border-color: #36d1dc;
+  color: #36d1dc;
+}
+.feel p{
+  font-size: 2.2rem;
+  text-align: start;
+
+}
+
+.form-group textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffff;
+  color: #333333;
+  border-color: #333333;
+}
+.form-group textarea:focus {
+  border-color: #36d1dc;
+  color: #36d1dc;
+}
+
+.form button {
+   display: inline-block;
+  position: relative;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 3px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+.form button:focus {
+  border-color: #36d1dc;
+  color: #36d1dc;
+}
+.form-group label {
+  font-size: 1.8rem;
+  color: #ffff;
+  align-self: start;
+}
+    </style>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Abdessamad Souilem</span>
+          <br />
+          Software Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/Pr1o-removebg-preview.png"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Welcome to my portfolio. I'm Abdessamad Souilem, a 24-year-old Moroccan software engineer that enjoys solving challenges.
+            </p>
+            <p class="about-wrapper__info-text">
+              I've been building applications for over two years as a junior software developer.
+            </p>
+            <p class="about-wrapper__info-text">
+              I enjoy taking on new tasks and working with different people in order to grow professionally.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="/souilemAbdessamadResume.pdf" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Waslni </h3>
+              <p class="project-wrapper__text-info">
+                Waslni is a project that I created with the intention of allowing customers to book a car and driver to transport them in a manner similar to a taxi.
+Also, the user can become one of the drivers and earn money whenever he wants.
+              </p>
+              <p class="project-wrapper__text-info" style="font-weight: bold;">
+                Technologies Used:
+                <br>
+ Next.js , Node js , Express.js , MongoDB , Mongoose , Docker , Kubernetes , Git , GitHub
+              </p>
+              <div class="project-wrapper__text-btns">
+                <!-- <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a -->
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/waslni.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Click.ma</h3>
+              <p class="project-wrapper__text-info">
+                I created an online store where users can easily choose and purchase the things they want in an orderly manner. The store's owner has access to a sizable control panel from which he can manage users, products, and other aspects of the store.
+                 </p>
+              <p class="project-wrapper__text-info" style="font-weight: bold;">
+                Technologies Used:
+                <br>
+React.js , Node js , Express.js , MongoDB , Mongoose ,Cypress Git , GitHub , React Native
+              </p>
+              <div class="project-wrapper__text-btns">
+               <!--<a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                > -->
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/click.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">M&C</h3>
+              <p class="project-wrapper__text-info">
+                 created a website where people can quickly find mechanics for their automobiles and books to help them fix their cars.
+              </p>
+              <p class="project-wrapper__text-info" style="font-weight: bold;">
+                Technologies Used:
+                <br>
+Laravel , Mysql , Vue.js , Android studio 
+              </p>
+              <div class="project-wrapper__text-btns">
+                <!-- <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >  -->
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <div class="contact_form">
+            <div class="feel">
+              <p>
+                Feel free to contact me if you have any questions or want to work together.
+              </p>
+              <p>
+                here are my contact details:
+              </p>
+              <br>
+              <p>
+                <a href="mailto:abdessamadsouilem1@gmail.com" class="cta-btn ">
+                 Email : abdessamadsouilem1@gmail.com
+                </a>
+              </p>
+              <br>
+              <p>
+                <a href="tel:+212694175174" class="cta-btn ">
+                 Number : +212694175174
+                </a>
+            </div>
+          <div class="contact-wrapper__form form">
+            <form action="">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+          </div>
+        </div>
+                
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://twitter.com/ABDESSAMADSOUI6"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdessamadsouilem/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/abdessamadsouilem"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; Created by Mee
+          Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>

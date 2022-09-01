@@ -1,0 +1,105 @@
+#contact {
+  background-image: linear-gradient(135deg,
+      $primary-color 0%,
+      $secondary-color 100%);
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -15rem;
+  margin-bottom: -1px;
+  color: $white-color;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    margin-top: 0;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .contact-wrapper {
+    margin-top: 3.2rem;
+    padding: 0 2rem;
+    backface-visibility: hidden;
+
+    &__text {
+      margin-bottom: 2.5rem;
+    }
+
+    &__text,
+    a {
+      font-size: 2.4rem;
+
+      // Responsive for contact text
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input {
+  border-radius: 0.5rem;
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #e5e5e5;
+  color: #333333;
+  border-color: #333333;
+}
+
+.form-group input:focus {
+  border-color: #36d1dc;
+  color: #36d1dc;
+}
+
+.form-group textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #e5e5e5;
+  color: #333333;
+  border-color: #333333;
+}
+
+.form-group textarea:focus {
+  border-color: #36d1dc;
+  color: #36d1dc;
+}
+
+.form-group button {
+  border-radius: 0.5rem;
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #e5e5e5;
+  color: #333333;
+  border-color: #333333;
+}
+
+.form-group button:focus {
+  border-color: #36d1dc;
+  color: #36d1dc;
+}
